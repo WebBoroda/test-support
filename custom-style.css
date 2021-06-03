@@ -13,6 +13,7 @@
 
 .new_f-dropdown-btn {
 	transform: translateY(40%);
+	position: relative;
 }
 
 .new_f-search-dates-wrap {
@@ -31,7 +32,6 @@
 	background: var(--color-bg-button);
 }
 
-.new_f-dropdown-btn .cnt::after,
 .new_f-dropdown-btn::after {
 	border: solid var(--color-bg-button);
 	border-width: 0 2px 2px 0;
@@ -87,21 +87,6 @@
 	background-color: var(--color-bg-button);
 }
 
-.new_f-dropdown-btn .cnt {
-	background-color: transparent;
-}
-
-/* .new_f-dropdown-btn .cnt {
-	position: absolute;
-	right: 4px;
-	top: 50%;
-	width: 10px;
-	height: 1px;
-	background-color: var(--color-bg-button);
-} */
-
-
-
 .new_f-ext-btn-text {
 	text-decoration: none;
 	position: relative;
@@ -149,6 +134,38 @@
 	text-align: center;
 	width: 100%;
 }
+
+
+.to .new_f-dropdown-btn .cnt,
+.to .new_f-dropdown-btn .cnt::after,
+.to .new_f-dropdown-btn .cnt::before {
+	content: '';
+	display: block;
+	background-color: transparent;
+	position: absolute;
+	padding: 0;
+	margin: 0;
+	right: 10px;
+	top: 20px;
+	left: auto;
+	width: 10px;
+	height: 1px;
+	border: 0;
+	background-color: var(--color-bg-button);
+}
+
+.to .new_f-dropdown-btn .cnt::before {
+	top: -3px;
+	right: 0px;
+	transform: rotate(0);
+}
+
+.to .new_f-dropdown-btn .cnt::after {
+	top: 3px;
+	right: 0px;
+	transform: rotate(0);
+}
+
 
 @media (max-width: 910px) {
 	.new_f-form .new_f-ext-btn {
