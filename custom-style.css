@@ -108,17 +108,18 @@
 	color: #666;
 }
 
-
+#new_os-to .new_f-dropdown-btn {
+	padding: 0 10px;
+}
 
 .new_f-form .new_f-ext-btn {
 	width: 204px;
 	border-radius: 0 0 15px 15px;
 	display: inline-block;
-	padding: 4px;
+	padding: 4px 10px 4px 20px;
 	font-size: 14px;
 	background: #efefef;
 	border: none;
-	text-align: center;
 	outline: 0 none;
 	color: #666;
 	cursor: pointer;
