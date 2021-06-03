@@ -29,7 +29,7 @@
 
 .new_f-form .new_f-form-submit {
 	border-radius: 0 30px 30px 0;
-	background: var(--color-bg-button);
+	background: linear-gradient(90deg, rgba(10, 178, 231, 1) 0%, rgba(20, 201, 203, 1) 100%);
 }
 
 .new_f-dropdown-btn::after {
