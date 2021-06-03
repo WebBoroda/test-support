@@ -1,0 +1,164 @@
+:root {
+	--color-bg-button: #0cb6e3;
+
+}
+
+
+.new_f-form-field,
+.new_f-form .new_f-form-submit {
+	float: left;
+	height: 64px;
+	line-height: 64px;
+}
+
+.new_f-dropdown-btn {
+	transform: translateY(40%);
+}
+
+.new_f-search-dates-wrap {
+	padding: 4px 6px 4px 30px;
+	position: relative;
+	display: flex;
+	transform: translateY(40%);
+}
+
+.new_f-form-field.to {
+	border-radius: 30px 0 0 3px;
+}
+
+.new_f-form .new_f-form-submit {
+	border-radius: 0 30px 30px 0;
+	background: var(--color-bg-button);
+}
+
+.new_f-dropdown-btn .cnt::after,
+.new_f-dropdown-btn::after {
+	border: solid var(--color-bg-button);
+	border-width: 0 2px 2px 0;
+	display: inline-block;
+	padding: 2px;
+	transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+}
+
+.new_f-form-field::before {
+	content: '';
+	position: absolute;
+	left: -1px;
+	top: 0px;
+	bottom: 0px;
+	display: block;
+	width: 1px;
+	background-color: #E0E0E0;
+}
+
+.new_f-datepicker-wrap button {
+	height: 30px;
+	width: 100%;
+	border-radius: 15px;
+	display: block;
+	padding: 0 0 1px 6px !important;
+	font-size: 14px;
+	line-height: 14px;
+	background: #efefef;
+	border: none;
+	cursor: text;
+	text-align: center !important;
+	outline: 0 none;
+	color: #666 !important;
+	font-weight: 400 !important;
+	letter-spacing: 0;
+	margin: 0;
+}
+
+.new_f-search-dates-popup:after {
+	opacity: 0;
+	right: 25px;
+}
+
+.new_f-datepicker-wrap-2:before {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 15px;
+	left: -18px;
+	width: 10px;
+	height: 1px;
+	background-color: var(--color-bg-button);
+}
+
+.new_f-dropdown-btn .cnt {
+	background-color: transparent;
+}
+
+/* .new_f-dropdown-btn .cnt {
+	position: absolute;
+	right: 4px;
+	top: 50%;
+	width: 10px;
+	height: 1px;
+	background-color: var(--color-bg-button);
+} */
+
+
+
+.new_f-ext-btn-text {
+	text-decoration: none;
+	position: relative;
+	color: #666;
+}
+
+
+
+.new_f-form .new_f-ext-btn {
+	width: 204px;
+	border-radius: 0 0 15px 15px;
+	display: inline-block;
+	padding: 4px;
+	font-size: 14px;
+	background: #efefef;
+	border: none;
+	text-align: center;
+	outline: 0 none;
+	color: #666;
+	cursor: pointer;
+}
+
+.new_f-ext-btn-text::before {
+	position: absolute;
+	top: 7px;
+	right: -27px;
+	left: auto;
+
+	border: solid var(--color-bg-button);
+	border-width: 0 2px 2px 0;
+	display: inline-block;
+	padding: 2px;
+	transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+}
+
+.new_f-form-field {
+	border-top: none;
+	border-bottom: none;
+}
+
+.new_mobile-form .new_f-ext-btn-container {
+	top: -110px;
+	text-align: center;
+	width: 100%;
+}
+
+@media (max-width: 910px) {
+	.new_f-form .new_f-ext-btn {
+		width: calc(50% - 18px) !important;
+	}
+
+}
+
+@media (max-width: 540px) {
+	.new_f-form .new_f-ext-btn {
+		width: 100% !important;
+	}
+
+}
