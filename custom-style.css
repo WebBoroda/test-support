@@ -166,6 +166,19 @@
 	transform: rotate(0);
 }
 
+.new_f-dates-container .new_f-search-dates-popup {
+	display: none;
+}
+
+.new_f-dropdown-body {
+	top: 64px;
+}
+
+@media (min-width: 479px) {
+	#new_os-to .new_f-dropdown-body.popup {
+		top: 60px;
+	}
+}
 
 @media (max-width: 910px) {
 	.new_f-form .new_f-ext-btn {
